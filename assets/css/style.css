@@ -1,0 +1,43 @@
+/* Variáveis Globais de Cores */
+:root {
+  /* Cores Primárias */
+  --primary-color: #f29f05;
+  --primary-hover: #f2b90c;
+  --accent-gold: #bc4e03;
+
+  /* Tema Escuro */
+  --bg-main: #0d0d0d;
+  --bg-card: #1a1a1a;
+  --bg-header: #121212;
+
+  /* Botão do WhatsApp */
+  --btn-whatsapp: #25d366;
+  --btn-whatsapp-neon: #34e775;
+
+  /* Tipografia */
+  --text-primary: #f2f2f2;
+  --text-secondary: #a0a0a0;
+  --text-dark: #0d0d0d;
+
+  /* Utilitários */
+  --border-color: #2a2a2a;
+  --gold-gradient: linear-gradient(
+    135deg,
+    #f2b90c 0%,
+    #f29f05 50%,
+    #bc4e03 100%
+  );
+}
+
+/* Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
