@@ -205,6 +205,38 @@ section:nth-of-type(even) {
   background-color: var(--bg-card);
 }
 
+.titulo-secao {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 50px;
+}
+
+.titulo-secao h2 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.titulo-secao p {
+  color: var(--text-secondary);
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.centro {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.aviso {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.aviso i {
+  color: var(--primary-color);
+  margin-right: 6px;
+}
+
 /* Hero */
 .hero-site {
   background:
@@ -272,4 +304,42 @@ section:nth-of-type(even) {
 .feature-item i {
   color: var(--primary-color);
   font-size: 1.4rem;
+}
+
+/* Serviços */
+.cards-servicos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-servico {
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card-servico:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-6px);
+}
+
+.card-servico i {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.card-servico h3 {
+  font-size: 1.4rem;
+  margin: 15px 0 10px;
+}
+
+.card-servico p {
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
