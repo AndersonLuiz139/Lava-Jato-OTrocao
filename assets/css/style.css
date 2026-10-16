@@ -343,3 +343,31 @@ section:nth-of-type(even) {
   color: var(--text-secondary);
   line-height: 1.6;
 }
+
+/* Acessórios */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.produto {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  font-weight: 500;
+  transition: border-color 0.3s ease;
+}
+
+.produto:hover {
+  border-color: var(--primary-color);
+}
+
+.produto i {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
