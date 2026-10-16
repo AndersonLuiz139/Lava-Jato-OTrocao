@@ -102,7 +102,7 @@ header {
   transition: color 0.3s ease;
 }
 
-/* Animação da linha no Hover (Esquerda para Direita) */
+/* Animação da linha no Hover */
 .menu ul li a::after {
   content: "";
   position: absolute;
@@ -195,7 +195,6 @@ h2 span {
   color: var(--text-dark);
 }
 
-/* Nas seções a .interface vira bloco (no header ela é flex) */
 section .interface,
 footer .interface {
   display: block;
@@ -209,7 +208,12 @@ section:nth-of-type(even) {
 /* Hero */
 .hero-site {
   background:
-    linear-gradient(180deg, rgba(13, 13, 13, 0.85) 0%, rgba(13, 13, 13, 0.92) 70%, var(--bg-main) 100%),
+    linear-gradient(
+      180deg,
+      rgba(13, 13, 13, 0.85) 0%,
+      rgba(13, 13, 13, 0.92) 70%,
+      var(--bg-main) 100%
+    ),
     url("../img/loja-hero.jpg") center / cover no-repeat;
 }
 
@@ -245,4 +249,27 @@ section:nth-of-type(even) {
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
+}
+
+/* Destaques rápidos da hero */
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border-color);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.feature-item i {
+  color: var(--primary-color);
+  font-size: 1.4rem;
 }
