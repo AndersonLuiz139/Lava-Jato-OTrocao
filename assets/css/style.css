@@ -413,3 +413,46 @@ section:nth-of-type(even) {
   line-height: 1.7;
   margin-top: 18px;
 }
+
+/* Localização */
+.grid-local {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info {
+  display: flex;
+  gap: 18px;
+}
+
+.info i {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.info h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.info p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.info a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.info a:hover {
+  color: var(--primary-color);
+}
