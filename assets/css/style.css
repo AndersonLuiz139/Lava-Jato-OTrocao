@@ -464,3 +464,49 @@ section:nth-of-type(even) {
   border: 1px solid var(--border-color);
   border-radius: 16px;
 }
+
+/* Rodapé */
+footer {
+  background-color: var(--bg-header);
+  border-top: 2px solid var(--primary-color);
+}
+
+footer .interface {
+  padding: 40px 4%;
+  text-align: center;
+}
+
+.logo-footer {
+  max-width: 140px;
+  margin: 0 auto;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.redes a {
+  font-size: 1.4rem;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.redes a:hover {
+  color: var(--text-dark);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+footer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
