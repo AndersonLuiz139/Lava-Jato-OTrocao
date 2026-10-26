@@ -211,7 +211,8 @@ section:nth-of-type(even) {
   margin: 0 auto 50px;
 }
 
-.titulo-secao h2 {
+.titulo-secao h2,
+.txt-sobre h2 {
   font-size: 2.2rem;
   line-height: 1.2;
 }
@@ -385,4 +386,30 @@ section:nth-of-type(even) {
   object-fit: cover;
   border-radius: 16px;
   border: 1px solid var(--border-color);
+}
+
+/* Sobre */
+.sobre .interface {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.img-sobre {
+  flex: 1;
+}
+
+.img-sobre img {
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.txt-sobre {
+  flex: 1;
+}
+
+.txt-sobre p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 18px;
 }
