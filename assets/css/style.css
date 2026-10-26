@@ -371,3 +371,18 @@ section:nth-of-type(even) {
   font-size: 1.6rem;
   color: var(--primary-color);
 }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.galeria img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
