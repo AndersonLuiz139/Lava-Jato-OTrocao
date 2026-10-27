@@ -143,6 +143,16 @@ header {
   transform: scale(1.05);
 }
 
+/* Botão do menu (aparece só no celular) */
+.btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 /* Elementos Reutilizáveis */
 .tag {
   display: inline-block;
@@ -546,6 +556,40 @@ footer p {
 }
 
 @media (max-width: 900px) {
+  /* Menu vira gaveta com o botão de três linhas */
+  .btn-menu {
+    display: block;
+  }
+
+  .btn-whatsapp {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-header);
+    border-bottom: 2px solid var(--primary-color);
+    display: none;
+  }
+
+  .menu.aberto {
+    display: block;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 4% 20px;
+  }
+
+  .menu ul li a {
+    padding: 14px 0;
+    width: 100%;
+  }
+
   .sobre .interface {
     flex-direction: column;
     gap: 40px;
