@@ -16,3 +16,6 @@ menu.querySelectorAll('a').forEach((link) => {
     btnMenu.querySelector('i').className = 'bi bi-list';
   });
 });
+
+// Ano atual no rodapé
+document.getElementById('ano').textContent = new Date().getFullYear();
