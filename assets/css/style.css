@@ -533,3 +533,65 @@ footer p {
 .whatsapp-flutuante:hover {
   transform: scale(1.1);
 }
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .menu ul {
+    gap: 25px;
+  }
+
+  .grid-produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .sobre .interface {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .grid-local {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 90px;
+  }
+
+  section .interface {
+    padding: 70px 16px;
+  }
+
+  .txt-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .titulo-secao h2,
+  .txt-sobre h2 {
+    font-size: 1.7rem;
+  }
+
+  .cards-servicos,
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .grid-produtos {
+    grid-template-columns: 1fr;
+  }
+}
